@@ -1,0 +1,11 @@
+/* Assigns Margin left and right at 10px to body tags, Margin left and right at 15px to div tags */
+@mixin margin($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+body {
+  @include margin(10px); }
+
+div {
+  @include margin(15px); }
