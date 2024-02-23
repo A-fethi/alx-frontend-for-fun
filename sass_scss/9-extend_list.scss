@@ -1,0 +1,15 @@
+/* Assigns Font size 12px to all tags of class .info, Text color #00FF00 to all tags of class .success and extend style of the class .info, Text color #FF0000 to all tags of class .warning and extend style of the class .info */
+%messages-shared {
+  font-size: 12px;
+}
+
+.info, .success, .warning {
+  @extend %messages-shared; }
+
+.success {
+  color: #00FF00;
+  @extend %messages-shared; }
+
+.warning {
+  color: #FF0000;
+  @extend %messages-shared; }
